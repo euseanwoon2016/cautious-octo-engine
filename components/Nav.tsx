@@ -24,7 +24,7 @@ const Nav: React.FC<{ isScrolled: boolean; heading: string }> = ({ isScrolled, h
               Home
             </Heading>
           </Link>
-          <Link href="/portfolio">
+          <Link href="/portfolio.html">
             <Heading as="div" size="md">
               Portfolio
             </Heading>

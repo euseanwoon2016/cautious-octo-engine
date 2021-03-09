@@ -34,7 +34,7 @@ const Portfolio = () => {
       <Box ref={firstSectionRef}></Box>
       <Container as="main" mb={4} maxW="container.xl">
         <Flex as="section" flexWrap="wrap" sx={{ gap: '1rem' }} justifyContent="center">
-          <Link href="/coffee">
+          <Link href="/coffee.html">
             <Grid
               as="article"
               templateRows="repeat(2, minmax(0, 1fr))"
@@ -43,7 +43,13 @@ const Portfolio = () => {
               bgColor="green.500"
               borderRadius="lg"
             >
-              <Image height="full" width="full" borderTopRadius="lg" objectFit="cover" src="images/coffee/coffee.png" />
+              <Image
+                height="full"
+                width="full"
+                borderTopRadius="lg"
+                objectFit="cover"
+                src="/images/coffee/coffee.png"
+              />
               <Box p={4} overflow="hidden" textOverflow="ellipsis">
                 <Heading as="div" size="lg">
                   Coffee
