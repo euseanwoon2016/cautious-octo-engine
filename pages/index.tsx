@@ -6,6 +6,7 @@ import homeStyles from '../styles/Home.module.scss';
 import Nav from '../components/Nav';
 import { BottomLeftSection, BottomRightSection } from '../components/Section';
 import ContactSection from '../components/ContactSection';
+import Meta from '../components/Meta';
 
 export default function Home() {
   const [scrolledState, setScrolledState] = useState({
@@ -60,6 +61,11 @@ export default function Home() {
 
   return (
     <>
+      <Meta
+        title="Website Templates - Woon Eusean"
+        description="Hello, my name is Woon Eusean. This site is made to showcase the different sites I have made for my own learning and also as a portfolio."
+        url="https://woon.win"
+      />
       <Nav heading="Woon Eusean" isScrolled={scrolledState.nav} />
       <BottomRightSection
         id="nav"

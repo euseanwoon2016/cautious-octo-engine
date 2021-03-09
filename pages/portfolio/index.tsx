@@ -1,5 +1,6 @@
 import { Box, Text, Container, Flex, Grid, Heading, Image, Link } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
+import Meta from '../../components/Meta';
 import Nav from '../../components/Nav';
 
 const Portfolio = () => {
@@ -30,6 +31,11 @@ const Portfolio = () => {
 
   return (
     <>
+      <Meta
+        title="Portfolio - Woon Eusean"
+        description="The list of websites I have made so far."
+        url="https://woon.win/portfolio.html"
+      />
       <Nav heading="Portfolio" isScrolled={isScrolled} />
       <Box ref={firstSectionRef}></Box>
       <Container as="main" mb={4} maxW="container.xl">
