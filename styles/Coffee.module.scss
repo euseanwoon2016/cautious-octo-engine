@@ -1,0 +1,128 @@
+.bodyStyle {
+  background-color: #f9f9f9;
+  color: #000000;
+
+  font-family: Roboto;
+  font-weight: 400 !important;
+}
+
+.coffeeSection {
+  position: relative;
+
+  min-height: 100vh;
+  padding: 6rem;
+  @media only screen and (max-width: 30em) {
+    padding: 1rem;
+  }
+}
+
+.logo {
+  align-items: center;
+  gap: 10px;
+
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.logo img {
+  filter: invert(10%) sepia(9%) saturate(2033%) hue-rotate(97deg) brightness(110%) contrast(100%);
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.hero {
+  margin-top: 6rem;
+}
+
+.heroHeader {
+  color: #ec6d00;
+  font-size: 36px;
+  text-align: center;
+
+  margin-bottom: 1.75rem;
+}
+
+.button,
+.button:hover {
+  padding: 1.75rem !important;
+  background: linear-gradient(135deg, #d6fff7, #26ffd7) !important;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: 24px !important;
+}
+
+.coffeeGradient::before {
+  content: '';
+  position: absolute;
+  background: url('/images/coffee/gradient1.svg') no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 66.66%;
+  z-index: 0;
+}
+
+.coffeeGradient2::before {
+  content: '';
+  position: absolute;
+  background: url('/images/coffee/gradient2.svg') no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: calc(100vh - 425px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 22.1354%;
+  z-index: 0;
+}
+
+.brewBox {
+  position: relative;
+
+  border-radius: 2.5rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+  padding: 2rem;
+
+  font-size: 2rem;
+}
+
+.brewBox p {
+  opacity: 0;
+
+  transition: opacity 0.25s cubic-bezier(1, 0, 0, 1);
+}
+
+.brewBox:hover p {
+  opacity: 1;
+}
+
+.brewBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  border-radius: 2.5rem;
+
+  background-color: rgba(255, 255, 255);
+
+  opacity: 0;
+
+  transition: opacity 0.25s cubic-bezier(1, 0, 0, 1);
+}
+
+.brewBox:hover::before {
+  opacity: 0.75;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1920px" height="425px" viewbox="0 0 1920 425" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#F9F9F9" />
+      <stop offset="1" stop-color="#B2FFF1" />
+    </linearGradient>
+  </defs>
+  <path d="M0 3.36254e-05L960 0L1920 3.36254e-05L1920 224.501C1920 224.501 1440 424.5 960 424.5C480 424.5 0 224.501 0 224.501L0 3.36254e-05Z" transform="matrix(1 0 0 -1 0 424.5)" id="Rectangle-2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+</svg>

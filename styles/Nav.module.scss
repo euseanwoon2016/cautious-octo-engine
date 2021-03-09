@@ -1,0 +1,52 @@
+.navBar {
+  display: flex;
+  align-items: center;
+
+  width: auto;
+
+  height: 6rem;
+  @media only screen and (max-width: 30em) {
+    height: auto;
+  }
+
+  transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.navContainer {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.navContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  opacity: 0;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.3);
+
+  transition: opacity 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.navScrolled::before {
+  opacity: 1;
+}
+
+.navScrolled {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.navScrolled .navBar {
+  height: 4rem;
+  color: hsl(0, 0%, 15%);
+}
+
+.navScrolled div {
+  display: none;
+}
